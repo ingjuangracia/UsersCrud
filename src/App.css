@@ -1,38 +1,117 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.usersForm {
+  width: 350px;
+  height: 200px;
+  background-color: lightgray;
+  margin-top: 40px;
+  margin-left: 120px;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-left: 20px;
+  box-shadow: 3px 2px 3px 2px  gray;
+}
+
+label{
+  display: inline-block;
+  width: 80px;
+}
+
+input {
+  width: 200px;
+}
+
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  text-align: left;
+  display: inline-block;
+  width: 350px;
+  height: 110px;
+  background-color: white;
+  margin: 20px;
+  list-style: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  box-shadow: 3px 2px 3px 2px  gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  width: 60px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 2px;
+  margin-bottom: 5px;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btnEdit {
+  background-color: blue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btnDelete {
+  background-color: orange;
+  color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.btnForm {
+  margin-top: 20px;
+  background-color: lightgreen;
+}
+
+.btnEdit:hover {
+  width: 63px;
+  height: 23px;
+  background-color: lightblue;
+  color: black
+}
+
+.btnForm:hover {
+  width: 63px;
+  height: 23px;
+  background-color: yellow;
+  color: black
+}
+
+.btnDelete:hover {
+  width: 63px;
+  height: 23px;
+  background-color: red;
+  color: white
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+  .usersForm {
+    margin-left: 140px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  
+  .usersForm {
+    margin-left: 208px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .usersForm {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+  .usersForm {
+    margin-left: 20px;
+  }
+}
+
