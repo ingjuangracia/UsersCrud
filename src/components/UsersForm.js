@@ -44,7 +44,7 @@ const UsersForm = ({ getUsers, userSelected, deselectUser }) => {
                 });
         } else {
 
-            axios.post('https:users-crud1.herokuapp.com/users/', user)
+            axios.post('https://users-crud1.herokuapp.com/users/', user)
                 .then(() => getUsers())
                 .catch(error => console.log(error.response));
         }
